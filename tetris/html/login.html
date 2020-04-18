@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<script src="../js/tabuleiro.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet" />
+	<title>Tetris Prog Web</title>
+</head>
+
+<body class="background" onload="mudarCor()">
+
+	<div class="titulo">
+		<p id="tituloo">TETRIS</p>
+	</div>
+
+	<div class="divTamanhoLogin centralizar">
+		<div class="centralizaLogin">
+			<form method="POST" action="../php/login.php">
+				<input class="formLogin" type="text" name="login" placeholder="Login">
+				<br><br>
+				<input class="formLogin" type="password" name="senha" placeholder="Senha">
+				<br><br>
+				<input class="botaoStartLogin" id="start" type="submit" value="LOGIN TO START" name="button_login">
+				<br><br>
+			</form>
+		</div>
+
+		<div class="centralizaBtnCad">
+			<button class="botaoCadastrar" id="cadastrar" type="button" onclick="location.href='cadastro.html'" name="cadastro">CADASTRAR</button>
+		</div>
+	</div>
+
+	<audio autoplay loop id="playAudio">
+		<source src="../sons/fliperama.mp3">
+	</audio>
+</body>
+
+</html>
